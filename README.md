@@ -1,5 +1,5 @@
 <center>
-    <img height="128" src="logo.svg">
+    <img height="128" src="logo.png">
     <h2>Sheet GTK Theme</h2>
 </center>
 
