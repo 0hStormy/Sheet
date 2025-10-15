@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Loopy
+Comment=GTK theme for Staklan
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Staklan
+ButtonLayout=:minimize,maximize,close

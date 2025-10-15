@@ -1,0 +1,28 @@
+@define-color text #000;
+
+@define-color window-bg #fff;
+@define-color alt-bg #ececec;
+@define-color titlebutton-hover #ddd;
+@define-color window-separator #F0F0F0;
+
+@define-color button-bg #E1E1E1;
+@define-color button-border #A0A0A0;
+
+@define-color entry-border #D9D9D9;
+@define-color combo-border #7A7A7A;
+
+@define-color close-button-hover #e81123;
+@define-color close-button-active #f1707a;
+
+@define-color radio-bg #fff;
+@define-color radio-border #383838;
+
+@define-color scrollbar-bg #E7E7E7;
+@define-color scrollbar-bar #B9B9B9;
+
+@define-color scale-bg #ECECEC;
+@define-color scale-slider #0078D7;
+
+@define-color progress-bg #E6E6E6;
+@define-color progress-color #06B025;
+@define-color progress-border #CCCCCC;

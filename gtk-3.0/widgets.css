@@ -1,0 +1,526 @@
+*:disabled {
+    opacity: 0.65;
+}
+
+.ssd decoration {
+    border-radius: 0px;
+    box-shadow: 0 0 0 1px alpha(#000000, 0.1); }
+    .ssd decoration.maximized {
+        border-radius: 0px; }
+tooltip.csd decoration {
+    border-radius: 0px ;
+    box-shadow: none; }
+.solid-csd decoration {
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+window {
+    background: @window-bg;
+    color: @text;
+    border: solid 1px @window-separator;
+    border-radius: 0px;
+}
+
+window.csd {
+    padding: 0px;
+    margin: 0px;
+    border: solid 1px @accent;
+    border-top: transparent;
+}
+
+headerbar {
+    background: @window-bg;
+    border-radius: 0px;
+    border: solid 1px @accent;
+    border-bottom: transparent;
+}
+
+dialog {
+    background: @window-bg;
+    border: solid 1px @window-separator;
+    color: @text;
+    border: solid 1px @accent;
+    border-top: transparent;
+}
+
+messagedialog,
+dialog.message {
+    background: @window-bg;
+    border: solid 1px @window-separator;
+    color: @text;
+    border: solid 1px @accent;
+    border-top: transparent;
+}
+
+button {
+    color: @text;
+    background: @button-bg;
+    border: solid 1px @button-border;
+    padding: 4px;
+    margin: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+    transition: ease-in-out 0.1s;
+}
+
+button:hover {
+    background: @accent-lighter;
+    border: solid 1px @accent;
+}
+
+button:active {
+    background: @accent-light;
+    border: solid 1px @accent-dark;
+}
+
+headerbar button {
+    color: @text;
+    background: transparent;
+    border: transparent;
+    padding: 8px;
+    margin: 0px;
+}
+
+headerbar button:hover {
+    background: @accent-lighter;
+    border: transparent;
+}
+
+headerbar button:active {
+    background: @accent-light;
+    border: transparent;
+}
+
+entry {
+    border: solid 1px @entry-border;
+    padding: 4px;
+}
+
+entry label {
+    color: @text;
+}
+
+headerbar entry {
+    border: 0px;
+    background: @alt-bg;
+}
+
+combobox arrow {
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+    min-height: 16px;
+    min-width: 16px;
+}
+
+combobox button {
+    background: transparent;
+    border: solid 1px @entry-border;
+    color: @entry-border;
+    margin: 0px;
+}
+
+combobox entry {
+    border: solid 1px @entry-border;
+    border-right: solid 0px transparent;
+}
+
+radio {
+    min-width: 13px;
+    min-height: 13px;
+    background: transparent;
+    border: solid 1px @radio-border;
+    border-radius: 50%;
+    color: @radio-border;
+    margin: 6px;
+}
+
+radio:checked {
+    color: @accent;
+    border: solid 1px @accent;
+}
+
+check {
+    min-width: 13px;
+    min-height: 13px;
+    background: transparent;
+    border: solid 1px @radio-border;
+    color: @radio-border;
+    margin: 6px;
+}
+
+check:checked {
+    color: @accent;
+    border: solid 1px @accent;
+}
+
+spinbutton button {
+    margin: 0px;
+}
+
+spinbutton entry {
+    min-width: 48px;
+}
+
+scrollbar {
+    background-color: @scrollbar-bg;
+}
+
+scrollbar trough {
+    background-color: @scrollbar-bg;
+}
+
+scrollbar slider {
+    background-color: @scrollbar-bar;
+    border-radius: 4px;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 0px;
+    padding: 2px;
+}
+
+scrollbar slider:hover {
+    background-color: @scrollbar-bar;
+}
+
+scrollbar slider:active {
+    background-color: @scrollbar-bar;
+}
+
+scrollbar button {
+    all: unset;
+    padding: 4px;
+    margin:  0px;
+    color: @combo-border;
+}
+
+scrollbar.vertical button.up {
+    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+    min-width: 6px;
+    min-height: 6px;
+}
+
+scrollbar.vertical button.down {
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+    min-width: 6px;
+    min-height: 6px;
+}
+
+scrollbar button:hover {
+    all: unset;
+}
+
+scrollbar button:active {
+    all: unset;
+}
+
+popover, menu, popup, tooltip {
+    background: @window-bg;
+    border: solid 1px @combo-border;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    color: @text;
+}
+
+notebook tab {
+    color: @text;
+    background: transparent;
+    border: solid 1px @entry-border;
+    padding: 4px;
+    margin: 0px;
+}
+
+notebook tab:hover {
+    background: @accent-lighter;
+    border: solid 1px @accent;
+}
+
+notebook tab:active {
+    background: @accent-light;
+    border: solid 1px @accent-dark;
+}
+
+notebook tab:selected {
+    background: @accent-light;
+    border: solid 1px @accent-dark;
+}
+
+notebook > stack {
+    border: solid 1px @entry-border;
+}
+
+frame {
+    border: solid 1px @entry-border;
+}
+
+paned > separator {
+    min-width: 1px;
+    min-height: 1px;
+    border: dotted 1px @entry-border
+}
+
+notebook > stack > * {
+    padding: 8px;
+}
+
+notebook > stack > scrolledwindow {
+    padding: 0;
+}
+
+notebook tab button {
+    color: @text;
+}
+
+scale {
+    min-height: 6px;
+    min-width: 6px;
+    margin: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+scale trough {
+    min-height: 4px;
+    background-color: @scale-bg;
+    border-radius: 0px;
+}
+
+scale.vertical trough {
+    min-height: 4px;
+    min-width: 4px;
+}
+
+scale slider {
+    background: @accent;
+    border: solid 1px @accent-dark;
+    border-radius: 4px;
+    margin: -8px;
+    margin-left: -4px;
+    margin-right: -4px;
+    border-radius: 0px;
+}
+
+scale.vertical slider {
+    margin: -8px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+progressbar {
+    min-height: 16px;
+}
+
+progressbar trough {
+    min-height: 16px;
+    background-color: @button-bg;
+    border: solid 1px @button-border;
+}
+
+progressbar progress {
+    background: @accent;
+    min-height: 16px;
+}
+
+menuitem {
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 1px;
+}
+
+menuitem:hover {
+    background: @accent-lighter;
+}
+
+switch {
+    color: @text;
+    background: @button-bg;
+    border: solid 1px @button-border;
+    color: @button-bg;
+}
+
+switch:hover {
+    border-color: @accent;
+    color: @accent-lighter;
+    background: @accent-lighter;
+}
+
+switch slider {
+    background: @accent;
+    border: solid 1px @accent-dark;
+    min-height: 16px;
+    min-width: 24px;
+    margin: 2px;
+}
+
+treeview button {
+    margin: 0px;
+    background: transparent;
+    border: dotted 1px @entry-border
+}
+
+treeview {
+    background: transparent;
+    border: dotted 1px @entry-border
+}
+
+
+treeview:active {
+    background: @accent;
+    color: #fff;
+    border: dotted 1px @entry-border
+}
+
+treeview:selected {
+    background: @accent;
+    color: #fff;
+    border: dotted 1px @entry-border
+}
+
+treeview:hover {
+    background-color: @alt-bg;
+}
+
+list row {
+    background: transparent;
+    border: dotted 1px @entry-border;
+    padding: 4px;
+}
+
+list row:active {
+    background: @accent;
+    color: #fff;
+    border: dotted 1px @entry-border
+}
+
+list row:selected {
+    background: @accent;
+    color: #fff;
+    border: dotted 1px @entry-border
+}
+
+list row:hover {
+    background-color: @alt-bg;
+}
+
+popover modelbutton {
+    background: transparent;
+    padding: 4px;
+}
+
+popover modelbutton:hover {
+    background-color: @alt-bg;
+}
+
+box button {
+    margin: 0px
+}
+
+button.flat {
+    border: solid 0px;
+    background-color: transparent;
+    padding: 8px;
+    margin: 2px;
+}
+
+button.flat:hover {
+    border: solid 1px @accent;
+    padding: 7px;
+}
+
+button.flat:active {
+    background: @accent-light;
+    border: solid 1px @accent-dark;
+    padding: 7px;
+}
+
+expander {
+    background: @alt-bg;
+    border: solid 1px @entry-border;
+}
+
+list {
+    border: solid 1px @entry-border;
+}
+
+revealer > box {
+    border-top: solid 1px @entry-border;
+    padding: 4px;
+}
+
+calendar {
+    background: @alt-bg;
+    border: solid 1px @entry-border;
+}
+
+filechooser {
+    background: @window-bg;
+    border: solid 1px @entry-border;
+}
+
+filechooser * {
+    color: @text;
+}
+
+.titlebutton {
+    padding-left: 14px;
+    padding-right: 14px;
+    background-image: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titlebutton:hover {
+    background-color: @titlebutton-hover;
+}
+
+.titlebutton.close:hover {
+    background-color: @accent;
+    color: #fff;
+}
+
+spinner {
+    background: none;
+    opacity: 0;
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+}
+
+spinner:checked {
+    opacity: 1;
+    animation: spin 1s linear infinite;
+}
+
+.link {
+    color: @accent;
+    text-decoration: underline;
+}
+
+.border-inset {
+    border: inset 1px @alt-bg;
+}
+
+.border-outset {
+    border: outset 1px @alt-bg;
+}
+
+.border-groove {
+    border: dashed 1px @alt-bg;
+    box-shadow: inset 0px 0 0 1px @alt-bg;
+    color: transparent;
+}
+
+.border-groove label {
+    color: @text;
+}
+
+.border-ridge {
+    border: dashed 1px @alt-bg;
+    box-shadow: 0px 0 0 1px @alt-bg;
+    color: transparent;
+}
+
+.border-ridge label {
+    color: @text;
+}
