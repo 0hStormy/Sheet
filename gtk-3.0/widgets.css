@@ -19,7 +19,7 @@ tooltip.csd decoration {
 window {
     background: @window-bg;
     color: @text;
-    border: solid 1px @window-separator;
+    border: 0px;
     border-radius: 0px;
 }
 
@@ -33,14 +33,20 @@ window.csd {
 headerbar {
     background: @window-bg;
     border-radius: 0px;
-    border: solid 1px @accent;
     border-bottom: transparent;
+}
+
+headerbar.csd {
+    border: solid 1px @accent;
 }
 
 dialog {
     background: @window-bg;
-    border: solid 1px @window-separator;
+    border: 0px;
     color: @text;
+}
+
+dialog.csd {
     border: solid 1px @accent;
     border-top: transparent;
 }
@@ -50,6 +56,11 @@ dialog.message {
     background: @window-bg;
     border: solid 1px @window-separator;
     color: @text;
+    border: 0px;
+}
+
+messagedialog.csd,
+dialog.message.csd {
     border: solid 1px @accent;
     border-top: transparent;
 }
