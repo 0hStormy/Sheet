@@ -1,5 +1,6 @@
 @define-color text #EEE;
 
+@define-color header-bg #000;
 @define-color window-bg #111;
 @define-color alt-bg #222;
 @define-color window-separator #333;

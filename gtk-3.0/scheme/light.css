@@ -1,5 +1,6 @@
 @define-color text #000;
 
+@define-color header-bg #fff;
 @define-color window-bg #fff;
 @define-color alt-bg #ececec;
 @define-color titlebutton-hover #ddd;

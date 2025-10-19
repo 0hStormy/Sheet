@@ -31,7 +31,7 @@ window.csd {
 }
 
 headerbar {
-    background: @window-bg;
+    background: @header-bg;
     border-radius: 0px;
     border-bottom: transparent;
 }
